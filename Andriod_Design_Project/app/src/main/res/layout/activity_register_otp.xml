@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_background"
+    tools:context="com.swipenest.activity.design.reg.OtpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter your verification code"
+                android:textAlignment="center"
+                android:textColor="@color/project_orange"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="10dp"
+                android:text="We have sent a verification code to your registered email ID / Mobile number."
+                android:textAlignment="center"
+                android:textColor="@color/project_gray_text"
+                android:textSize="13sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/otpBox1"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/otpBox2"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/otpBox3"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/otpBox4"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/otpBox5"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Resend"
+                android:textAlignment="center"
+                android:textColor="@color/project_orange"
+                android:textSize="18.5sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmOtp"
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/registration_button"
+                android:radius="50dp"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="#FF9052"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

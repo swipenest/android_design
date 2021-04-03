@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_background"
+    tools:context=".activity.design.login.LoginConfirmOtp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="13dp"
+            android:text="Please enter OTP to verify"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/project_orange"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/loginOtpBox1"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/loginOtpBox2"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/loginOtpBox3"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/loginOtpBox4"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:layout_marginLeft="@dimen/otp_text_margin_left"
+                android:layout_marginRight="@dimen/otp_text_margin_right"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+            <EditText
+                android:id="@+id/loginOtpBox5"
+                android:layout_width="@dimen/otp_text_width"
+                android:layout_height="@dimen/otp_text_height"
+                android:background="@drawable/otp_box"
+                android:inputType="number"
+                android:lineHeight="@dimen/otp_text_line_height"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/otp_text_padding_left"
+                android:textColor="@color/otp_text_color" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLoginConfirmOtp"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:radius="50dp"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:backgroundTint="#FF9052"
+            android:background="@drawable/registration_button"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
